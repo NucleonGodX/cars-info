@@ -1,4 +1,4 @@
-/* * {
+* {
     box-sizing: border-box;
 }
 
@@ -23,5 +23,17 @@ header {
     display: flex;
     align-items: center;
     padding-block: 10px;
+    justify-content: center;
 }
- */
+a{
+    padding-right:300px;
+    text-decoration: none;
+    font-size:30px;
+    color:black;
+}
+
+.car-head{
+    text-decoration: none;
+    color:black;
+    font-size: 40px;
+}
