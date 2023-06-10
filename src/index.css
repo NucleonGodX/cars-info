@@ -22,18 +22,93 @@ header {
     height: 110px;
     display: flex;
     align-items: center;
-    padding-block: 10px;
     justify-content: center;
-}
-a{
-    padding-right:300px;
-    text-decoration: none;
-    font-size:30px;
-    color:black;
+    margin-left: 70px;
+    margin-right:100px;
+
 }
 
+a{
+    text-decoration: none;
+    color:blue;
+    font-size:30px;
+}
 .car-head{
     text-decoration: none;
     color:black;
     font-size: 40px;
+}
+
+.cars{
+    width:230px;
+    height:230px;
+    margin-right:100px;
+    border-radius: 20px;
+    
+
+}
+
+.cars-info{    
+    position:relative;
+    display:inline-flex;
+    left:70px;
+    padding-bottom: 50px;
+}
+.info{
+    left:200px;
+}
+
+
+h2{
+    width:200px;
+}
+
+h3{
+    color:green
+}
+
+.Comfort{
+    color:yellow;
+    background-color: purple;
+    display:inline;
+    padding:10px;
+    border-radius: 8px;
+}
+
+.Ultimate-Luxury{
+    color:gold;
+    background-color: red;
+    display:inline;
+    padding:10px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.Sports{
+    color:cyan;
+    background-color: black;
+    display:inline;
+    padding:10px;
+    border-radius: 8px;
+}
+
+
+.heading{
+    position: relative;
+    left:70px;
+    right:70px;
+    padding-top:70px;
+    padding-bottom:50px;
+    font-size:45px;
+}
+
+.det-Img{
+    width:500px;
+    height:500px;
+
+}
+
+.car-data{
+    display:flex;
+    justify-content: center;
 }

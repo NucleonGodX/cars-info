@@ -5,14 +5,15 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import About from './pages/About';
 import Home from './pages/Home';
 import Cars from './pages/Cars';
+import CarData from "./pages/CarData"
 import './server'
 function App(){
    return( <BrowserRouter>
-   <header>
+   <header className='headmust'>
     <Link to='/' className='car-head'>#CarLife</Link>
-    <br/>
+    <hr/>
     <Link to="/about">About</Link>
-    <br/>
+    <hr/>
     <Link to="/cars">Cars</Link>
 
     </header>
@@ -20,6 +21,7 @@ function App(){
     <Route path="/" element={<Home/>}/>
     <Route path="/about" element={<About/>}/>
     <Route path="/cars" element={<Cars/>}/>
+    <Route path="/cars/:id" element ={<CarData/>}/>
 
     </Routes>
     </BrowserRouter>)
