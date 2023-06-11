@@ -8,13 +8,14 @@ export default function Cars(){
         .then(data=>setCars(data.vans)) },
         [])
     const carElements=cars.map(car=><div className="cars-info"> 
-        <Link to={`/cars/${car.id}`} style={{ textDecoration: 'none', color: 'black', fontSize: '16px' }}>
+        <Link to={`/cars/${car.id}`} className="box-element" style={{ textDecoration: 'none', color: 'black', fontSize: '16px' }}>
   <img className="cars" src={car.imageUrl} />
 
         <div className="info">        
-        <h2>{car.name}</h2>
+        <h2 className="name">{car.name}</h2>
         <h3>${car.price}/day</h3>
-        <p className={car.type}>{car.type}</p></div>
+        <p className={car.type}>{car.type}</p>
+        </div>
        </Link>
      </div>)
     

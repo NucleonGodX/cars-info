@@ -14,6 +14,11 @@ export default function CarData(){
         <div>{
         car? <div className="car-data">
             <img className="det-Img" src={car.imageUrl}></img>
+            <p className={car.type}>{car.type}</p>
+            <h2 className="name-det">{car.name}</h2>
+            <h3>${car.price}/day</h3>
+            <p className="info-det">{car.description}
+            <button className="rent">Rent This Car</button></p>
         </div>:<h1>Loading . . .</h1>}</div>
     )
 }

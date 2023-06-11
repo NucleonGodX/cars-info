@@ -7,22 +7,17 @@ import Home from './pages/Home';
 import Cars from './pages/Cars';
 import CarData from "./pages/CarData"
 import './server'
+import Layout from './components/Layout';
+
 function App(){
    return( <BrowserRouter>
-   <header className='headmust'>
-    <Link to='/' className='car-head'>#CarLife</Link>
-    <hr/>
-    <Link to="/about">About</Link>
-    <hr/>
-    <Link to="/cars">Cars</Link>
-
-    </header>
-    <Routes>
+   <Routes>
+    <Route element={<Layout/>}>
     <Route path="/" element={<Home/>}/>
     <Route path="/about" element={<About/>}/>
     <Route path="/cars" element={<Cars/>}/>
     <Route path="/cars/:id" element ={<CarData/>}/>
-
+    </Route>
     </Routes>
     </BrowserRouter>)
 }
