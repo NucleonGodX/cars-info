@@ -30,8 +30,11 @@ body {
 
 a{
     text-decoration: none;
-    color:blue;
+    color:black;
     font-size:30px;
+}
+a:hover{
+    text-decoration: underline;
 }
 .car-head{
     text-decoration: none;
