@@ -7,6 +7,8 @@ export default function Header(){
         <hr/>
         <Link to="/about">About</Link>
         <hr/>
+        <Link to= "/host">Host</Link>
+        <hr/>
         <Link to="/cars">Cars</Link>
     
         </header>
