@@ -1,15 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 export default function Header(){
     return(
         <header className='headmust'>
-        <Link to='/' className='car-head'>#DreamLife</Link>
+        <NavLink to='/' className='car-head'>#DreamLife</NavLink>
         <hr/>
-        <Link to="/about">About</Link>
+        <NavLink to="/about" className={({isActive})=>isActive?"active-style": null}>About</NavLink>
         <hr/>
-        <Link to= "/host">Host</Link>
+        <NavLink to= "/host" className={({isActive})=>isActive?"active-style": null}>Host</NavLink>
         <hr/>
-        <Link to="/cars">Cars</Link>
+        <NavLink to="/cars" className={({isActive})=>isActive?"active-style": null}>Cars</NavLink>
     
         </header>
     )

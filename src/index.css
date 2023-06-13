@@ -200,23 +200,31 @@ nav {
     margin-left: auto;
     margin-right: auto;
     left:60px;
-}
-
-.for-links {
-    display: inline-block;
+        display: inline-block;
     height: 100%;
     width: 30%;
 }
 
+.after-links {
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    left:60px;
+        display: inline-block;
+    height: 100%;
+    width: 30%;
+    color:#ff1e4b
+}
+
 nav  a {
     font-family: cursive;
-    color: #ff1e4b;
+    color: black;
     font-size: 30px;
     text-decoration: none;
 }
 
 nav  a:hover {
-    color: #dd5771;
+    color: #ff1e4b;
 }
 
 .footer{
@@ -229,4 +237,17 @@ nav  a:hover {
     margin-bottom: 0px;
     color:#AAAAAA
 
+}
+
+main{
+    min-height:600px;
+}
+
+.active-style{
+    color:#ff1e4b
+
+}
+
+a:hover{
+    color:#ff1e4b;
 }

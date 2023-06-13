@@ -1,15 +1,15 @@
 import React from "react";
 import Dashboard from "../pages/Host/Dashboard";
 import { Outlet } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function HomeLayout(){
     return(<><nav className='host-nav'>
-    <Link className="for-links" to="/host">Host</Link>
+    <NavLink className= "for-links" to="/host">Host</NavLink>
    
-    <Link className="for-links" to= "/host/income">Income</Link>
+    <NavLink className={({isActive})=>isActive?"after-links": "for-links"} to= "/host/income">Income</NavLink>
    
-    <Link className="for-links" to="/host/reviews">Reviews</Link>
+    <NavLink className={({isActive})=>isActive?"after-links": "for-links"} to="/host/reviews">Reviews</NavLink>
     </nav>
     <Outlet/></>
     
