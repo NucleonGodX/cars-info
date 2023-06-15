@@ -22,9 +22,11 @@ body {
     height: 110px;
     display: flex;
     align-items: center;
+    padding-right:60px;
+    padding-left:40px;
+    margin-left: 0px;
+    margin-right:0px;
     
-    margin-left: 40px;
-    margin-right:60px;
 
 }
 
@@ -74,9 +76,6 @@ a:hover{
     width:400px;
 }
 
-h3{
-    color:green
-}
 
 .Comfort{
     color:yellow;
@@ -192,6 +191,7 @@ box-shadow: 2px 2px 4px #000000;
 }
 
 nav {
+    margin-top:30px;
     height: 48px;
 }
 
@@ -202,7 +202,7 @@ nav {
     left:60px;
         display: inline-block;
     height: 100%;
-    width: 30%;
+    width: 20%;
 }
 
 .after-links {
@@ -212,14 +212,14 @@ nav {
     left:60px;
         display: inline-block;
     height: 100%;
-    width: 30%;
+    width: 20%;
     color:#ff1e4b
 }
 
 nav  a {
     font-family: cursive;
     color: black;
-    font-size: 30px;
+    font-size: 23px;
     text-decoration: none;
 }
 
@@ -250,4 +250,38 @@ main{
 
 a:hover{
     color:#ff1e4b;
+}
+
+.host-image{
+    width:80px;
+    height:80px;
+    border-radius: 10px;
+}
+
+
+.cars-heading{
+    position:relative;
+    left:100px;
+    margin-bottom:30px;
+}
+
+.car-text{
+    padding-left:10px;
+    font-size: 20px;
+}
+
+.host-car-link{    
+    display:flex;
+    align-items: center;
+    position:relative;
+    left:10%;
+    margin-bottom:20px;
+    width:350px;
+    
+
+}
+
+a.host-car-link:hover{
+    text-decoration: none;
+    color:green;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import Home from './pages/Home';
 import Cars from './pages/Cars/Cars';
@@ -12,6 +12,10 @@ import Dashboard from './pages/Host/Dashboard';
 import Income from './pages/Host/Income';
 import Reviews from './pages/Host/Reviews';
 import HomeLayout from "../src/components/HomeLayout"
+import HostCarDetails from './pages/Host/HostCarDetails';
+import HostCars from './pages/Host/HostCars';
+
+
 function App(){
    return( <BrowserRouter>
    <Routes>
@@ -24,7 +28,8 @@ function App(){
     <Route index element={<Dashboard/>}/>
     <Route path="income" element={<Income/>}/>
     <Route path="reviews" element={<Reviews/>}/>
-
+    <Route path="cars" element={<HostCars/>}/>
+    <Route path="cars/:id" element={<HostCarDetails/>}/>
     </Route>
     </Route>
     </Routes>
