@@ -14,7 +14,9 @@ import Reviews from './pages/Host/Reviews';
 import HomeLayout from "../src/components/HomeLayout"
 import HostCarDetails from './pages/Host/HostCarDetails';
 import HostCars from './pages/Host/HostCars';
-
+import HostCarInfo from './pages/Host/HostCarinfo';
+import HostCarPhotos from './pages/Host/HostCarPhotos';
+import HostCarPrice from './pages/Host/HostCarPrice';
 
 function App(){
    return( <BrowserRouter>
@@ -29,7 +31,11 @@ function App(){
     <Route path="income" element={<Income/>}/>
     <Route path="reviews" element={<Reviews/>}/>
     <Route path="cars" element={<HostCars/>}/>
-    <Route path="cars/:id" element={<HostCarDetails/>}/>
+    <Route path="cars/:id" element={<HostCarDetails/>}>
+    <Route index element={<HostCarInfo/>}/>
+    <Route path="photos" element={<HostCarPhotos/>}/>
+    <Route path="pricing" element={<HostCarPrice/>}/>
+    </Route>
     </Route>
     </Route>
     </Routes>
