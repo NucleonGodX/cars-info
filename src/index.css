@@ -285,3 +285,33 @@ a.host-car-link:hover{
     text-decoration: none;
     color:green;
 }
+
+.host-car-img{
+    width:160px;
+    height:160px;
+    border-radius: 20px;
+}
+
+.host-car-detail{
+    display:flex;
+    align-items: center;
+    margin-left: 80px;
+    margin-top:50px;
+}
+
+.host-detail-text{
+    padding-left: 20px;
+}
+
+.back-btn{
+margin-left:100px;
+Font-family: Inter;
+Font-style: Medium;
+Font-size: 15.95px;
+color:#201F1D;
+
+}
+
+.entire-car-container{
+    margin-top: 50px;
+}
