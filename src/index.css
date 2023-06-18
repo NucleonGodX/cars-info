@@ -203,8 +203,11 @@ nav {
     display: inline-block;
     height: 100%;
     width: 20%;
+    
 }
-
+.for-links>a{
+    width:100px
+}
 .after-links {
     position:relative;
     margin-left: auto;
