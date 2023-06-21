@@ -107,8 +107,8 @@ a:hover{
     position: relative;
     left:70px;
     right:70px;
-    padding-top:70px;
-    padding-bottom:50px;
+    padding-top:20px;
+    padding-bottom:20px;
     font-size:33px;
 }
 
@@ -361,4 +361,26 @@ font-size:18px;}
     width:100px;
     height:100px;
     margin-left: 90px;
+}
+
+.params-container{
+    display:flex;
+    margin-left:25px;
+}
+
+.single-param{
+    margin-right:50px;
+    margin-bottom:40px;
+    background-color: greenyellow;
+    padding:10px;
+    font-size: 23px;
+    border-radius: 8px;
+}
+
+a.single-param:hover{
+    text-decoration: none;
+}
+
+a.clear-param:hover{
+    text-decoration: none;
 }
